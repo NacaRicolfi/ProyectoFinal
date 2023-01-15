@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link href="Styles.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <button type="button" id="boton_color1">Fondo 1</button>
+
+  <button type="button" id="boton_color2">Fondo 2</button>
+
+  <button type="button" id="refresh">Recargar Original</button>
+
+  <script src="funciones.js"></script>
+  <div class="curriculum">
+    <h1>Curriculum Vitae</h1>
+    <hr>
+    <section>
+    <h2>Información Personal</h2>
+    <div>
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="fotos">
+      </div>
+        <ul>
+            <li>Nombre y apellido: Eduardo Rodriguez</li>
+            <li>Fecha de Nacimiento: 11/3/1987</li>
+            <li>Dirección: Carlos Pellegrini 833, C1009, Buenos Aires</li>
+            <li>Teléfono: (011) 4473-0532</li>
+            <li>Mail: eduardo.rodriguez@example.com</li>
+        </ul></p>
+      </section>   
+    <section>
+      <hr>
+      <h2>Presentación</h2>
+      <article class="item">
+        <p>Profesional del derecho con más de 10 años de experiencia en el rubro. Cuento con experiencia tanto en el sector público, como relator en Tribunal Oral en lo Criminal N° 5; como en el sector privado, en estudio jurído y empresa. Actualmente me encuentro trabajando como Team Leader en Estudio Jurídico encargado de las acciones en Capital Federal.</p>
+      </article>
+    </section>
+    <section>
+      <hr>
+      <h2>Experiencia Laboral</h2>
+      <h4>Empresa: Estudio Jurídico ABC</h4>
+      <ul>
+        <li>Localización: Lavalle 1200, CABA.</li>
+        <li>Fecha desempeño de funciones: Desde 01/03/2020 a la actualidad.</li>
+        <li>Puesto: Team Leader</li>
+      </ul>
+      <p>Tareas desarrolladas</p>
+      <ol>
+        <li>Abogado encargado de la firma e impulso de los expedientes.</li>
+        <li>A cargo del equipo de Capital Federal para delegar tareas y acciones pertinentes.</li>
+        <li>Responsable de asistencia a audiencias.</li>
+        <li>Responsable de la negociación de los acuerdos.</li>
+      </ol>
+      <h4>Empresa: Comercio Internacional SA</h4>
+      <ul>
+        <li>Localización: Reconquista 700, CABA.</li>
+        <li>Fecha desempeño de funciones: 10/06/2016 al 28/02/2020.</li>
+        <li>Puesto: Abogado Sr.</li>
+      </ul>
+        <p>Tareas desarrolladas</p>
+      <ol>
+        <li>Encargado de la confección de contratos.</li>
+        <li>Confección y emisión de notificaciones.</li>
+        <li>Análisis de jurisprudencia local e internacional.</li>
+      </ol>
+      <h4>Empresa: Tribunal Oral en lo Criminal N° 5</h4>
+      <ul>
+        <li>Localización: Lavalle 900, 1er. Piso, CABA</li>
+        <li>Fecha desempeño de funciones: 02/03/2012 al 30/04/2016.</li>
+        <li>Puesto: Relator</li>
+      </ul>
+        <p>Tareas desarrolladas</p>
+      <ol>
+        <li>Confección de comunicaciones del tribunal.</li>
+        <li>Encargado de tomar audiencias.</li>
+        <li>Confección de escritos y oficios.</li>
+        <li>Atención de Mesa de Entradas.</li>
+      </ol>
+    </section>
+    <section>
+      <hr>
+      <h3>Estudios</h3>
+      <p class="estudios">Abogacía</p>
+          <ul>
+            <li>Establecimiento: Universidad de Buenos Aires</li>
+            <li>Fecha inicio: Marzo de 2011</li>
+            <li>Fecha fin: Diciembre de 2016</li>
+            <li>Promedio: 7,0</li>
+          </ul>
+        <p class="estudios">Licenciatura en Relaciones del Trabajo</p>
+          <ul>
+            <li>Establecimiento: Universidad de Buenos Aires</li>
+            <li>Fecha inicio: Marzo de 2017</li>
+            <li>Fecha fin: Actualmente en curso</li>
+          </ul>
+    </section>
+    <section>
+      <hr>
+      <h3>Estudios adicionales</h3>
+      <div id="estudiosad1" class="estudiosad1">Licenciatura en Resolución de Conflictos y Mediación
+        <input type="button" value="Mostrar estudio siguiente" onclick="muestra2();">
+          <ul>
+            <li>Establecimiento: Universidad Nacional de Tres de Febrero</li>
+            <li>Años cursados: 2 años (2018 a 2019)</li>
+          </ul>
+      </div>
+      <div style="display:none" id="estudiosad2" class="estudiosad2">Licenciatura en Contratos Civiles
+        <input type="button" value="Mostrar estudio anterior" onclick="muestra1();">
+        <ul>
+            <li>Establecimiento: Universidad Abierta Interamericana</li>
+            <li>Año: 2018</li>
+          </ul>
+      </div>
+    </section>
+    <section>
+      <hr>
+      <h3>Lenguajes</h3>
+      <p class="idiomas">Inglés</p>
+         <ul>
+           <li>Establecimiento: AACI</li>
+           <li>Años cursados: 4 años</li>
+           <li>Oral: Nivel intermedio</li>
+           <li>Escrito: Nivel intermedio</li>
+         </ul>
+    </section>
+    <section>
+      <hr>
+      <h3>Habilidades</h3>
+      <ul>
+        <li>Mediación</li>
+        <li>Audiencista</li>
+        <li>Negociación</li>
+        <li>Liderazgo</li>
+        <li>Comunicación</li>
+      </ul>
+    </section>
+    <section>
+      <hr>
+      <h3>Conocimientos adicionales</h3>
+      <ul>
+        <li>Paquete MS Office: Avanzado</li>
+        <li>Base de Datos: Principiante</li>
+      </ul>
+    </section>
+    <hr class="bottom-line">
+    <footer>
+      <p>
+        <a href="https://www.google.com.ar/maps/place/Lavalle+1200,+C1048+CABA/@-34.6026034,-58.3846179,19z/data=!4m5!3m4!1s0x95bccac6023d28fb:0xde35ec6ddd83ea32!8m2!3d-34.6026895!4d-58.3839098" target="_blank">Oficina Laboral</a>
+      </p>
+      <p class="name">Dr. Eduardo Rodriguez</p>
+
+</body>
+</html>
